@@ -9,20 +9,23 @@ Data for the European Social Survey is publicly available at: http://www.europea
 
 ### Author/contact
 
- - Erik Gahner Larsen, School of Politics and International Relations, University of Kent, E.G.Larsen@kent.ac.uk.
+ - Erik Gahner Larsen, School of Politics and International Relations, University of Kent, erikgahner@gmail.com.
 
 ### Repository content
 
 - `01-data.R` = R script used to create the datasets used for the analysis, `data-dnes.csv` and `data-ess.csv`
     - Requires `ElectionStudy-2011_da_F1.dta` and `ESS6DK.dta`
-- `02-analysis` = R script used for all analyses in the article
+- `02-analysis.R` = R script used for all analyses in the article (original version)
+- `02-analysis_2021.R` = R script used for all analyses in the article (2021 version)
 - `data-dnes.csv` = Data from the Danish National Election Study (required to create Figure A.1)
 - `dnes-ess.csv`= Data from the European Social Survey (required to estimate everything beyond Figure A.1)
-- `sessionInfo.txt` = Output from sessionInfo() in R
+- `data-ess_matched.csv`= Matched data from the European Social Survey (added in 2021 update to ensure easier reproducibility)
+- `sessionInfo_2021.txt` = Output from sessionInfo() in R (2021 version)
+- `sessionInfo.txt` = Output from sessionInfo() in R (original version)
 
 ### Session info
 
-The analyses were made with [RStudio](http://www.rstudio.com/) (Version 1.0.136) with the following R session:
+The original analyses were made with [RStudio](http://www.rstudio.com/) (Version 1.0.136) with the following R session:
 
 ```
 ## R version 3.3.1 (2016-06-21)
